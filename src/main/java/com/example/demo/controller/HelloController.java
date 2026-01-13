@@ -16,8 +16,9 @@ public class HelloController {
     }
 
     @GetMapping("/")
-    public String home() {
-        return "Spring Boot is running 🚀";
+    public Map<String, String> home() {
+//        return "Spring Boot is running 🚀";
+        return Map.of("message", "Spring Boot is running 🚀");
     }
 
     @PostMapping("/greet")
